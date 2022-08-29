@@ -29,7 +29,6 @@
     scrollbar-color: var(--bs-secondary) #d3d3d375;
 }
 
-
 /* Targtes on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
     width: 5px;
@@ -1165,4 +1164,20 @@ table .table-form .form-control{
     height: 100%;
     width: 100%;
     opacity: 0;
+}
+
+
+
+/* STOCK TAKE SETTINGS */
+.border-left-success {
+    border-left: 8px solid #28C76F !important;
+}
+
+.border-left-primary {
+    border-left: 8px solid #7E57C2 !important;
+}
+.btn-top {
+    position: absolute;
+    top: 3px;
+    right: 3px;
 }
