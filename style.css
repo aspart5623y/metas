@@ -51,6 +51,7 @@ body {
 .btn {
     box-shadow: none !important;
     border-radius: 10px !important;
+    /* min-height: 40px; */
 }
 .bg-orange {
     background-color: #FF965D !important;
@@ -60,6 +61,9 @@ body {
 }
 .bg-primary{
     background-color: #7E57C2 !important;
+}
+.bg-primary-shade {
+    background-color: #F4EBFE;
 }
 .btn-primary{
     background-color: #7E57C2 !important;
@@ -76,6 +80,9 @@ body {
 .btn-primary:hover{
     background-color: #470592 !important;
     border-color: #470592 !important;
+}
+.input-group {
+    min-width: 120px;
 }
 .btn-close {
     position: absolute;
@@ -101,8 +108,14 @@ body {
 .text-pink {
     color: #E996F0 !important;
 }
+.text-muted {
+    color: #82868B !important;
+}
 .rounded{
     border-radius: 10px !important;
+}
+.rounded-left {
+    border-radius: 10px 0 0 10px !important;
 }
 .badge-primary {
     background-color: #7E57C2;
@@ -1180,4 +1193,12 @@ table .table-form .form-control{
     position: absolute;
     top: 3px;
     right: 3px;
+}
+
+.suppliers-dropdown {
+    position: absolute;
+    width: 280px;
+    max-height: 456px;
+    left: -280px;
+    overflow-y: aut;
 }
