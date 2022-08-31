@@ -26,7 +26,7 @@
     font-family: 'Poppins', sans-serif;
     user-select: none;
     scrollbar-width: thin;
-    scrollbar-color: var(--bs-secondary) #d3d3d375;
+    scrollbar-color: #9a62d941 #d3d3d375;
 }
 
 /* Targtes on Chrome, Edge, and Safari */
@@ -37,9 +37,9 @@
     background: #d3d3d375;
 }
 *::-webkit-scrollbar-thumb {
-    background-color: var(--bs-secondary);
+    background-color: #9a62d941;
     border-radius: 20px;
-    border: 3px solid var(--bs-secondary);
+    border: 3px solid #9a62d941;
 }
 
 html {
@@ -51,7 +51,6 @@ body {
 .btn {
     box-shadow: none !important;
     border-radius: 10px !important;
-    /* min-height: 40px; */
 }
 .bg-orange {
     background-color: #FF965D !important;
@@ -83,6 +82,14 @@ body {
 }
 .input-group {
     min-width: 120px;
+}
+.input-group .input-group-append {
+    margin-left: -5px;
+    z-index: 5;
+}
+.input-group .input-group-append .btn {
+    /* padding: 10px auto !important; */
+    height: 100%;
 }
 .btn-close {
     position: absolute;
@@ -350,11 +357,6 @@ body {
 .sidebar-link[aria-expanded = "true"] .arrow{
     transform: rotate(0deg);
 }
-/* .sidebar-item .collapse .sidebar-link {
-    position: relative;
-    display: block !important;
-    padding-left: 45px;
-} */
 .sidebar-item .collapse .sidebar-link.active, .sidebar-item .collapse .sidebar-link:hover{
     background-color: #E8E9EB !important;
     border-left: 0px;
