@@ -26,9 +26,8 @@
     font-family: 'Poppins', sans-serif;
     user-select: none;
     scrollbar-width: thin;
-    scrollbar-color: var(--bs-secondary) #d3d3d375;
+    scrollbar-color: #9a62d941 #d3d3d375;
 }
-
 
 /* Targtes on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
@@ -38,9 +37,9 @@
     background: #d3d3d375;
 }
 *::-webkit-scrollbar-thumb {
-    background-color: var(--bs-secondary);
+    background-color: #9a62d941;
     border-radius: 20px;
-    border: 3px solid var(--bs-secondary);
+    border: 3px solid #9a62d941;
 }
 
 html {
@@ -62,6 +61,9 @@ body {
 .bg-primary{
     background-color: #7E57C2 !important;
 }
+.bg-primary-shade {
+    background-color: #F4EBFE;
+}
 .btn-primary{
     background-color: #7E57C2 !important;
     border-color: #7E57C2 !important;
@@ -77,6 +79,17 @@ body {
 .btn-primary:hover{
     background-color: #470592 !important;
     border-color: #470592 !important;
+}
+.input-group {
+    min-width: 120px;
+}
+.input-group .input-group-append {
+    margin-left: -5px;
+    z-index: 5;
+}
+.input-group .input-group-append .btn {
+    /* padding: 10px auto !important; */
+    height: 100%;
 }
 .btn-close {
     position: absolute;
@@ -102,8 +115,14 @@ body {
 .text-pink {
     color: #E996F0 !important;
 }
+.text-muted {
+    color: #82868B !important;
+}
 .rounded{
     border-radius: 10px !important;
+}
+.rounded-left {
+    border-radius: 10px 0 0 10px !important;
 }
 .badge-primary {
     background-color: #7E57C2;
@@ -338,11 +357,6 @@ body {
 .sidebar-link[aria-expanded = "true"] .arrow{
     transform: rotate(0deg);
 }
-/* .sidebar-item .collapse .sidebar-link {
-    position: relative;
-    display: block !important;
-    padding-left: 45px;
-} */
 .sidebar-item .collapse .sidebar-link.active, .sidebar-item .collapse .sidebar-link:hover{
     background-color: #E8E9EB !important;
     border-left: 0px;
@@ -1165,4 +1179,28 @@ table .table-form .form-control{
     height: 100%;
     width: 100%;
     opacity: 0;
+}
+
+
+
+/* STOCK TAKE SETTINGS */
+.border-left-success {
+    border-left: 8px solid #28C76F !important;
+}
+
+.border-left-primary {
+    border-left: 8px solid #7E57C2 !important;
+}
+.btn-top {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+
+.suppliers-dropdown {
+    position: absolute;
+    width: 280px;
+    max-height: 456px;
+    left: -280px;
+    overflow-y: aut;
 }
