@@ -91,6 +91,7 @@ body {
     /* padding: 10px auto !important; */
     height: 100%;
 }
+
 .btn-close {
     position: absolute;
     top: -10px;
@@ -522,7 +523,7 @@ nav .navbar-nav .dropdown{
     position: relative;
     margin: 15px 0;
 }
-.custom-select, .form-control {
+.custom-select, .form-control, .input-group .custom-file-label {
     height: 40px;
     /* width: 100% !important; */
     border-radius: 14px;
@@ -538,6 +539,10 @@ nav .navbar-nav .dropdown{
 }
 .input-group-append .input-group-text, .input-group-append .form-control{
     border-radius: 0 14px 14px 0;
+    height: 40px;
+}
+.input-group .custom-file-label::after {
+    display: none;
 }
 
 /* ==================================
