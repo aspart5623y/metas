@@ -48,6 +48,17 @@ html {
 body {
     background-color: #F7F8FC;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .btn {
     box-shadow: none !important;
     border-radius: 10px !important;
