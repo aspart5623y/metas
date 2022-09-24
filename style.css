@@ -48,17 +48,6 @@ html {
 body {
     background-color: #F7F8FC;
 }
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none !important;
-  margin: 0 !important;
-}
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 .btn {
     box-shadow: none !important;
     border-radius: 10px !important;
@@ -123,11 +112,20 @@ input[type=number] {
     justify-content: center;
     align-items: center;
 }
+.dot {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 10px;
+}
 .btn-light {
     background-color: #F4F4F4 !important;
     border-color: #F4F4F4 !important;
 }
 .text-primary{
+    color: #7E57C2 !important;
+}
+a.text-primary:hover {
     color: #7E57C2 !important;
 }
 .text-pink {
