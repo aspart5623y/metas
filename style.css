@@ -112,11 +112,20 @@ body {
     justify-content: center;
     align-items: center;
 }
+.dot {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 10px;
+}
 .btn-light {
     background-color: #F4F4F4 !important;
     border-color: #F4F4F4 !important;
 }
 .text-primary{
+    color: #7E57C2 !important;
+}
+a.text-primary:hover {
     color: #7E57C2 !important;
 }
 .text-pink {
