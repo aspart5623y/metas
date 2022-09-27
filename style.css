@@ -434,6 +434,9 @@ a.text-primary:hover {
 #wrapper.open #sidebar #sidebar-toggle-button svg {
     color: #6c757d;
 }
+#wrapper.open #sidebar .sidebar-search {
+    visibility: hidden;
+}
 /* CSS CONFIGURATION FOR SIDEBAR:HOVER WHEN ITS UNLOCKED */
 #wrapper.open #sidebar:hover {
     width: 250px;
@@ -450,6 +453,9 @@ a.text-primary:hover {
 }
 #wrapper.open #sidebar:hover .logo-2{
     display: none;
+}
+#wrapper #sidebar .sidebar-search {
+    visibility: visible;
 }
 @media screen and (max-width:991px) {
     #sidebar{
