@@ -74,6 +74,14 @@ body {
     background-color: #7E57C2 !important;
     border-color: #7E57C2 !important;
 }
+.btn-outline-warning{
+    border-color: #FF965D !important;
+    color: #FF965D !important;
+}
+.btn-outline-warning:hover{
+    background-color: #FF965D !important;
+    color: #fff !important;
+}
 .btn-outline-primary{
     border-color: #7E57C2 !important;
     color: #7E57C2 !important;
@@ -89,9 +97,16 @@ body {
 .input-group {
     min-width: 120px;
 }
+.input-group .input-group-prepend {
+    margin-right: -5px;
+    z-index: 5;
+}
 .input-group .input-group-append {
     margin-left: -5px;
     z-index: 5;
+}
+.input-group-btn {
+    margin: 4px;
 }
 .input-group .input-group-append .btn {
     /* padding: 10px auto !important; */
@@ -130,6 +145,10 @@ a.text-primary:hover {
 }
 .text-pink {
     color: #E996F0 !important;
+}
+.bg-pink {
+    background-color: #E996F0 !important;
+    color: #fff !important;
 }
 .text-muted {
     color: #82868B !important;
@@ -272,16 +291,15 @@ a.text-primary:hover {
 }
 
 .status-state{
-    padding: 7px 10px;
+    padding: 7px 0;
     border-radius: 5px;
     font-size: 12px;
     text-transform: uppercase;
-    font-weight: bold;
-    min-width: 95px;
+    /* font-weight: bold; */
+    width: 110px;
     display: inline-block;
     text-align: center;
 }
-
 .status-state.active {
     background: #e5ffd4bf;
     color: #74b500;
@@ -297,6 +315,14 @@ a.text-primary:hover {
 .status-state.neutral {
     color: #252f40;
     background: #eeeef0;
+}
+.status-state.positive {
+    color: #17C1E8;
+    background: #17c2e82c;
+}
+.status-state.primary {
+    color: #7E57C2;
+    background: #7e57c221;
 }
 /* ========================  
     2. P R E L O A D E R  
@@ -548,6 +574,10 @@ nav .navbar-nav .dropdown{
     border-radius: 10px;
 }
 
+.pos-dropdown {
+    left: -90px !important;
+}
+
 
 
 
@@ -592,6 +622,15 @@ nav .navbar-nav .dropdown{
 .form-group{
     position: relative;
     margin: 15px 0;
+}
+.form-control-sm {
+    height: 25px !important;
+    font-size: 13px !important;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 .custom-select, .form-control, .input-group .custom-file-label {
     height: 40px;
