@@ -578,8 +578,39 @@ nav .navbar-nav .dropdown{
     left: -90px !important;
 }
 
+.notification-dropdown-menu {
+    /* height: 480px; */
+    width: 400px;
+    left: -150px;
+}
+@media screen and (max-width: 400px) {
+    .notification-dropdown-menu {
+        width: 90vw;
+        left: 0px;
 
+    }
+}
 
+.search-dropdown-menu {
+    width: 490px;
+}
+.search-dropdown-menu .dropdown-item:active, .search-dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+}
+@media screen and (max-width: 490px) {
+    .search-dropdown-menu {
+        width: 93vw;
+    }
+}
+
+.creation-dropdown-menu {
+    width: 364px;
+}
+@media screen and (max-width: 364px) {
+    .creation-dropdown-menu {
+        width: 90vw;
+    }
+}
 
 /* ============================  
         6. L I N K S 
@@ -1374,4 +1405,20 @@ table .table-form .form-control{
     position: fixed;
     top: 150px;
     right: -30px;
+}
+
+
+
+/* ====================================================  
+    24. S C R O L L     T A B
+======================================================= */
+.scrtabs-tab-scroll-arrow{display: inline-flex !important}
+.scrtabs-tabs-fixed-container{
+    height: auto !important;
+    width: 89% !important
+}
+.scrtabs-tab-container {
+    height: auto !important;
+    display: flex;
+    align-items: center;
 }
