@@ -194,6 +194,9 @@ a.text-primary:hover {
     white-space: nowrap;
     vertical-align: middle;
 }
+.stock-table td {
+    vertical-align: top;
+}
 .table th{
     vertical-align: middle;
     color: gray;
@@ -655,7 +658,8 @@ nav .navbar-nav .dropdown{
     margin: 15px 0;
 }
 .form-control-sm {
-    height: 25px !important;
+    height: 30px !important;
+    width: 60px !important;
     font-size: 13px !important;
     border-radius: 30px;
     -webkit-border-radius: 30px;
