@@ -70,6 +70,9 @@ body {
 .btn-white {
     background-color: #ffffff;
 }
+.text-success {
+    color: #249F5D !important;
+}
 .btn-primary{
     background-color: #7E57C2 !important;
     border-color: #7E57C2 !important;
@@ -148,7 +151,7 @@ a.text-primary:hover {
 }
 .bg-pink {
     background-color: #E996F0 !important;
-    color: #fff !important;
+    color: #fff;
 }
 .text-muted {
     color: #82868B !important;
@@ -565,13 +568,11 @@ nav .navbar-nav .dropdown{
     background-color: lightgrey;
     color: rgb(63, 62, 62);
 }
-
 .my-account-dropdown {
     width: 240px;
     left: -50px !important;
     border-radius: 10px;
 }
-
 .my-account-dropdown .dropdown-menu {
     width: 240px;
     border-radius: 10px;
@@ -1425,4 +1426,69 @@ table .table-form .form-control{
     height: auto !important;
     display: flex;
     align-items: center;
+}
+
+
+
+.progress-box {
+    position: relative;
+    width: 20%;
+    text-align: center;
+    height: 60px;
+}
+.progress-box::before {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 103%;
+    background-color: #CCCCCC;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    top: 50px;
+    left: 0px;
+}
+.progress-box::after {
+    content: "";
+    position: absolute;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #CCCCCC;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    top: 40px;
+    left: 45%;
+}
+
+
+.progress-box.active::before {
+    background-color: #7E57C2;
+    z-index: 2;
+}
+.progress-box.active::after {
+    background-color: #7E57C2;
+}
+.migration-card {
+    position: relative;
+} 
+.migrated-file {
+    position: relative;
+    width: 120px;
+}
+.migrated-file button {
+    position: absolute;
+    top: 0px;
+    right: 30px;
+}
+.migrated-file div {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    left: 0px;
 }
