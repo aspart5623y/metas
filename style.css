@@ -130,6 +130,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+.btn-close-normal {
+    position: relative;
+    background-color: #F4EBFE;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    border-radius: 50% !important;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .dot {
     display: inline-block;
     height: 8px;
@@ -164,6 +176,9 @@ a.text-primary:hover {
 }
 .rounded-right {
     border-radius: 0 10px 10px 0 !important;
+}
+.rounded-right.more {
+    border-radius: 0 14px 14px 0 !important;
 }
 .badge-primary {
     background-color: #7E57C2;
