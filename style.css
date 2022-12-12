@@ -130,6 +130,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+.btn-close-normal {
+    position: relative;
+    background-color: #F4EBFE;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    border-radius: 50% !important;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .dot {
     display: inline-block;
     height: 8px;
@@ -137,6 +149,10 @@ body {
     border-radius: 10px;
 }
 .btn-light {
+    background-color: #F4F4F4 !important;
+    border-color: #F4F4F4 !important;
+}
+.bg-light {
     background-color: #F4F4F4 !important;
     border-color: #F4F4F4 !important;
 }
@@ -164,6 +180,9 @@ a.text-primary:hover {
 }
 .rounded-right {
     border-radius: 0 10px 10px 0 !important;
+}
+.rounded-right.more {
+    border-radius: 0 14px 14px 0 !important;
 }
 .badge-primary {
     background-color: #7E57C2;
@@ -235,6 +254,10 @@ a.text-primary:hover {
 }
 .border-primary {
     border-color: #7E57C2 !important;
+}
+.border-top-custom {
+    border-top: 15px solid #E996F0 !important;
+    border-radius: 14px;
 }
 .badge-light{
     background: rgba(128, 128, 128, 0.3);
